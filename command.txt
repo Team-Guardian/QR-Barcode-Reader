@@ -1,1 +1,0 @@
-python barcode_scanner_image.py --image barcode_example.png
