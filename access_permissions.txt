@@ -1,0 +1,9 @@
+
+cd to virtualbox directory
+VBoxManage list webcams
+VboxManage controlvm "Name of your virutal machine in quotes" webcam attach .whichever webcam that was listed you want to add
+
+
+Example
+
+VboxManage controlvm "Ubuntu 16.0.3" webcam attach .1
