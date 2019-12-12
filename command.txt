@@ -1,0 +1,2 @@
+python imreaderV3.py --ref test_qr_code.jpg
+
