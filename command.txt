@@ -1,1 +1,2 @@
-python barcode_scanner_image.py --image barcode_example.png
+python imreaderV3.py --ref test_qr_code.jpg
+
