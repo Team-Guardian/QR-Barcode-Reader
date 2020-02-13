@@ -1,5 +1,5 @@
 
-This is the second version of the QR code scanner for machine vision. 
+This is the second version of the QR code scanner for machine vision. The installation script qr_code_install may be used to create a virtual environment 'qr' with the necessary dependencies.
 
 What the code does
 
@@ -10,7 +10,7 @@ also been added, one says test,the other team_guardian.
 
 What each file is for:
 
-access_permissions.txt - a shortcut to the commands necessary to relay permissions, please use this after reading the links below, one or two installations are required first.
+access_permissions.txt - a shortcut to the commands necessary to relay permissions, if you are using virtualbox then the app doesnt have access to your camera which the code uses, so refer to this file for further instructions
 
 command.txt - a sample command to run the code
 
