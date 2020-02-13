@@ -1,0 +1,15 @@
+
+Before running the QR code scanning program in virtual box, go onto your host OS when your VM is running, and access the directory where your virtualbox files are. Copy the path. Open up the command line and change your current directory to that directory. Then run the commands below.
+
+cd to virtualbox directory *ignore, already completed*
+VBoxManage list webcams
+VboxManage controlvm "Name of your virutal machine in quotes" webcam attach .whichever webcam that was listed you want to add
+
+
+Example
+
+VboxManage controlvm "Ubuntu 16.0.3" webcam attach .1
+
+After this you can run the QR code scanning program and it will be able to access your laptop's camera.
+
+If there are any issues with the way I have explained it here, the links where I got the info are below:
