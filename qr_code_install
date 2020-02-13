@@ -1,0 +1,11 @@
+#!/bin/bash
+source `which virtualenvwrapper.sh`
+git clone --single-branch --branch Version-2.0 https://github.com/Team-Guardian/QR-Barcode-Reader.git
+mkvirtualenv qr
+workon qr
+pip install imutils
+pip install pyzbar
+pip install opencv-python
+pip install numpy
+echo  QR-Barcode-Reader has been installed, virtual environment qr has been filled with the necessary dependencies.
+echo Refer README.txt for further instructions 
