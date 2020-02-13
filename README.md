@@ -1,5 +1,5 @@
 
-This is the second version of the QR code scanner for machine vision. The installation script qr_code_install may be used to create a virtual environment 'qr' with the necessary dependencies.
+This is the second version of the QR code scanner for machine vision. The installation script qr_code_install may be used to copy the repository and create a virtual environment 'qr' with the necessary dependencies.
 
 What the code does
 
