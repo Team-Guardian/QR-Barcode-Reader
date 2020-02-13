@@ -6,7 +6,7 @@ What the code does
 Accesses your computers camera and reads QR codes from the individual frames. Highlights in green if the string encoded 
 in the QR code matches the one inputted (this is inputted from the command line). Highlights in red if the string does not
 match. All QR codes found within your camera's view are logged into a csv file named barcodes.csv. Two test qr codes have 
-also been added, one says test,the other team_guardian.
+also been added, one says test,the other team_guardian. If you want to test the program, print a few qr codes and hold them up to the camera when the program is running.
 
 What each file is for:
 
