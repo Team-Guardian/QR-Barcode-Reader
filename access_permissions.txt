@@ -13,3 +13,5 @@ VboxManage controlvm "Ubuntu 16.0.3" webcam attach .1
 After this you can run the QR code scanning program and it will be able to access your laptop's camera.
 
 If there are any issues with the way I have explained it here, the links where I got the info are below:
+
+How to relay access permissions of camera into virutalbox - https://scribles.net/using-webcam-in-virtualbox-guest-os-on-windows-host/ https://richardstechnotes.com/2017/03/07/connecting-a-webcam-to-a-virtualbox-guest-os/
