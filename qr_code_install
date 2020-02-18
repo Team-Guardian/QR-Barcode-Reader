@@ -1,6 +1,5 @@
 #!/bin/bash
 source `which virtualenvwrapper.sh`
-git clone https://github.com/Team-Guardian/QR-Barcode-Reader.git
 mkvirtualenv qr
 workon qr
 pip install imutils
