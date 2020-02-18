@@ -2,9 +2,9 @@
 source `which virtualenvwrapper.sh`
 mkvirtualenv qr
 workon qr
-pip install imutils
-pip install pyzbar
-pip install opencv-python
-pip install numpy
+python3 -m pip install imutils
+python3 -m pip install pyzbar
+python3 -m pip install opencv-python
+python3 -m pip install numpy
 echo  QR-Barcode-Reader has been installed, virtual environment qr has been filled with the necessary dependencies.
 echo Refer README.txt for further instructions 
