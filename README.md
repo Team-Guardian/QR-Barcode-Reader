@@ -21,6 +21,12 @@ team_guardian_qr_code - QR code that says team_guardian
 test_qr_code - QR code that says test
 
 
+<b> how to successfully run the installation script and start the program </b>
+
+1. git clone 
+
+
+
 Relevant links:
 
 How to relay access permissions of camera into virutalbox - 
