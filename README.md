@@ -23,7 +23,14 @@ test_qr_code - QR code that says test
 
 <b> how to successfully run the installation script and start the program </b>
 
-1. git clone 
+1. git clone https://github.com/Team-Guardian/QR-Barcode-Reader.git
+2. cd ./QR-Barcode-Reader
+3. chmod +x ./qr_code_install
+4. qr_code_install
+5. workon qr
+6. switch to native windows OS and relay permissions (if applicable)
+7. python3 imreaderV3.py --ref test_qr_code.png
+8. Press q to quit.
 
 
 
