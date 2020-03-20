@@ -29,7 +29,7 @@ test_qr_code - QR code that says test
 4. ./qr_code_install
 5. workon qr
 6. switch to native windows OS and relay permissions (if applicable)
-7. python3 imreaderV3.py --ref test_qr_code.png
+7. python imreaderV3.py --ref test_qr_code.png
 8. Press q to quit.
 
 
@@ -43,5 +43,14 @@ https://richardstechnotes.com/2017/03/07/connecting-a-webcam-to-a-virtualbox-gue
 How to install opencv
 https://www.pyimagesearch.com/2018/08/15/how-to-install-opencv-4-on-ubuntu/
 
+OpenCV Development and Display Windows using SSH:
+https://richarthurs.com/2019/01/20/raspberrypi-cv-setup/
 
+To operate on the Odroid:
 
+1. Find your Odroid's IP Address
+2. Check that X Window Forwarding is enabled. If not, see the above links.
+3. SSH into the Odroid, with X window forwarding enabled, with the command 'sudo ssh -X odroid@<odroid's IP Address>
+4. Clone the project files over and navigate into the project directory.
+5. Install the relevant Python packages and libraries if needed.
+6. Run the command 'Python imreaderV3.py --ref test_qr_code.png'
