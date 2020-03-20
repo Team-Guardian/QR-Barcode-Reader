@@ -21,16 +21,10 @@ ap.add_argument("-i", "--ref", required=True,
 #Dictionary with all command line inputted values
 args = vars(ap.parse_args())
 
-
-
-
-
-
-
 #Pull out the string that shows what image we are looking for
 reference = args["ref"]
-print ("The image we are looking for: ")
-print(reference)
+print "The image we are looking for: "
+print reference
 
 
 
@@ -56,16 +50,16 @@ barcode_we_want = pyzbar.decode(binary)
 for barcode in barcode_we_want:
 	barcode_we_want_string = barcode.data.decode("utf-8")
 
-print("The string we are looking for: ")
-print(barcode_we_want_string)
+print "The string we are looking for: "
+print barcode_we_want_string
 	
 
 
 
 
 # initialize the video stream and allow the camera sensor to warm up
-print("Starting video stream...")
-vs = VideoStream(src=0).start()
+print "Starting video stream..."
+vs = VideoStream(src=0).start() #0 accesses the laptop camera and 1 accesses the webcam
 time.sleep(2.0)
 
 # open the output CSV file for writing 
@@ -94,6 +88,7 @@ while True:
 	barcodes_in_frame = pyzbar.decode(frame)
 
 #loop over the detected barcodes
+	barcodeData = ''
 	for barcode in barcodes_in_frame:
 
 		# the barcode data is a bytes object so if we want to draw it
@@ -131,8 +126,11 @@ while True:
 			csv.flush()
 			found.add(barcodeData)
 
+		print "Barcode data: " + barcodeData
+
 	# show the output frame
-	cv2.imshow("Barcode Scanner", frame)
+	#cv2.imshow("Barcode Scanner", frame)
+	
 	key = cv2.waitKey(1) & 0xFF
  
 	# if the `q` key was pressed, break from the loop
@@ -146,7 +144,7 @@ while True:
 
 
 # close the output CSV file do a bit of cleanup
-print("[INFO] cleaning up...")
+print "[INFO] cleaning up..."
 csv.close()
 cv2.destroyAllWindows()
 vs.stop()
